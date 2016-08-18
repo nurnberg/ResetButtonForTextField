@@ -1,30 +1,19 @@
 package org.vaadin.resetbuttonfortextfield;
 
-import java.util.Date;
-
-import javax.servlet.annotation.WebServlet;
-
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Title;
-import com.vaadin.annotations.VaadinServletConfiguration;
 import com.vaadin.data.Property;
 import com.vaadin.event.FieldEvents;
 import com.vaadin.server.VaadinRequest;
-import com.vaadin.server.VaadinServlet;
-import com.vaadin.ui.Button;
-import com.vaadin.ui.FormLayout;
-import com.vaadin.ui.Label;
-import com.vaadin.ui.TextField;
-import com.vaadin.ui.UI;
+import com.vaadin.spring.annotation.SpringUI;
+import com.vaadin.ui.*;
+
+import java.util.Date;
 
 @Theme("valo")
 @Title("Reset Button for TextField Extension Demo")
+@SpringUI
 public class DemoUI extends UI {
-
-    @WebServlet(value = "/*", asyncSupported = true)
-    @VaadinServletConfiguration(productionMode = false, ui = DemoUI.class, widgetset = "org.vaadin.resetbuttonfortextfield.DemoWidgetSet")
-    public static class Servlet extends VaadinServlet {
-    }
 
     @Override
     protected void init(VaadinRequest request) {
