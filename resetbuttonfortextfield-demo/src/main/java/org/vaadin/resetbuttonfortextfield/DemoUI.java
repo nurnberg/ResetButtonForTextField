@@ -2,6 +2,7 @@ package org.vaadin.resetbuttonfortextfield;
 
 import com.vaadin.annotations.Theme;
 import com.vaadin.annotations.Title;
+import com.vaadin.annotations.Widgetset;
 import com.vaadin.data.Property;
 import com.vaadin.event.FieldEvents;
 import com.vaadin.server.VaadinRequest;
@@ -13,6 +14,7 @@ import java.util.Date;
 @Theme("valo")
 @Title("Reset Button for TextField Extension Demo")
 @SpringUI
+@Widgetset("org.vaadin.resetbuttonfortextfield.DemoWidgetSet")
 public class DemoUI extends UI {
 
     @Override
